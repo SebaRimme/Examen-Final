@@ -1,0 +1,24 @@
+<ion-card class="principal">
+  <ion-row>
+    <ion-col size="10" offset="1">
+          <img 
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" 
+          alt="Duoc Uc"
+          >
+    </ion-col>
+  </ion-row>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-card-content>
+    <ion-button expand="block" color="tertiary" (click)="scan()">Leer QR</ion-button>
+    <br>
+    <div class="fondo">
+      {{ code }}
+    </div>
+  </ion-card-content>
+</ion-card>
+<ion-button expand="block" color="light" [routerLink]="'/home/inicio-alumno'">
+  Volver
+</ion-button>

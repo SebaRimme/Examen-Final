@@ -1,0 +1,58 @@
+<div class="container">
+  <ion-card class="principal">
+    <ion-card-header class="ion-text-center">
+      <ion-row>
+        <ion-col size="10" offset="1">
+              <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" 
+              alt="Duoc Uc"
+              >
+        </ion-col>
+      </ion-row>
+      <ion-card-title>
+        QR Duoc Uc
+      </ion-card-title>
+        <br>
+      <ion-text>
+        Opcion
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button  expand="block" color="tertiary" [routerLink]= "'/home/qr-lector'">
+              Escanear QR
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</div>
+<ion-menu contentId="menuContenido"  side="start" type="overlay">
+  <ion-toolbar>
+    <ion-title>Bienvenido A la App</ion-title>
+  </ion-toolbar>
+<ion-content>
+  <ion-list>
+    <ion-item>Perfil de Usuario</ion-item>
+    <ion-item>Configuracion</ion-item>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item href="home" expand="block" color="tertiary">
+          <ion-label>
+            <ion-icon name="close-outline"></ion-icon>
+            Cerrar Sesion
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
+</ion-menu>
+<div id="menuContenido"></div>
